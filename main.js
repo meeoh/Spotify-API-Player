@@ -41,7 +41,7 @@ if (missing.length) {
 }
 
 const host = "localhost";
-const port = 6969;
+const port = process.env.PORT || 7070;
 
 const requestListener = async function (req, res) {
   res.writeHead(200);
